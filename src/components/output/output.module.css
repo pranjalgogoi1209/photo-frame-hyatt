@@ -25,3 +25,11 @@
     gap: 4dvh;
   }
 }
+
+/* @media print {
+  .outputImgContainer {
+    page-break-inside: avoid;
+    max-width: 100%;
+    height: auto;
+  }
+} */
