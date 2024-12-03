@@ -1,6 +1,9 @@
 .Output {
   height: 100dvh;
   gap: 5dvh;
+  justify-content: flex-start !important;
+  padding: 5dvh 0;
+
   .outputImgContainer {
     position: relative;
     width: 20vw;
