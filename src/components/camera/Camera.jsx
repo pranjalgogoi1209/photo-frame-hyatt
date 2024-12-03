@@ -67,7 +67,7 @@ export default function Camera({ setCapturedImg, setShowComponent }) {
               ref={webRef}
               id={styles.webcam}
               videoConstraints={{
-                facingMode: "user",
+                facingMode: "environment",
                 aspectRatio: 4 / 6,
               }}
               forceScreenshotSourceSize={true}
