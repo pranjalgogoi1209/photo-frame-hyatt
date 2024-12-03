@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.flex-row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 0.5vw 2vw;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  font-size: 1.5vw;
+  background: #f24ec1;
+  color: #fff;
+  font-weight: 600;
+}
+
+.h1Txt {
+  font-size: 2vw;
+  color: #f24ec1;
+}
