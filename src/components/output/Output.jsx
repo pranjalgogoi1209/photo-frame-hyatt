@@ -6,7 +6,6 @@ import frame from "./../../assets/frame.png";
 
 export default function Output({ capturedImg, setShowComponent }) {
   const printRef = useRef();
-  const downloadRef = useRef();
   const [imgToPrint, setImgToPrint] = useState();
 
   const handleDownload = () => {
@@ -30,7 +29,7 @@ export default function Output({ capturedImg, setShowComponent }) {
       <h1 className="h1Txt">Print It Out</h1>
 
       <div
-        ref={downloadRef}
+        ref={printRef}
         className={`flex-row-center ${styles.outputImgContainer}`}
       >
         <div className={`flex-row-center ${styles.frame}`}>
@@ -43,7 +42,12 @@ export default function Output({ capturedImg, setShowComponent }) {
       </div>
 
       <div className={`flex-row-center ${styles.footer}`}>
-        <button onClick={handleDownload} className="btn">
+        <button
+          onClick={() =>
+            exportAsImage(printRef.current, "image-" + new Date().getTime())
+          }
+          className="btn"
+        >
           Download
         </button>
         <button onClick={() => setShowComponent("camera")} className="btn">
